@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Gundam U.C. Watch Order Wiki</title>
 
-<head>
-    <title>Page Title</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
+  <body>
+    <video autoplay muted loop id="space-background">
+      <source src="vid/space.mp4" type="video/mp4" />
+    </video>
 
     <div class="topnav" id="myTopnav">
-        <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-        <a href="section2.html">Section 2</a>
-        <a href="section3.html">Section 3</a>
-        <a href="see_also.html">See Also</a>
-        <a class="active" href="references.html">References</a>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
+      <a href="index.html">Home</a>
+      <a href="section1.html">Release Date</a>
+      <a href="section2.html">Mobile Suits</a>
+      <a href="see_also.html">See Also</a>
+      <a class="active" href="references.html">References</a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <!-- Page content -->
     <div class="content">
-        This is reference section.
+      <h1>References</h1>
+      <br />
+      <button id="pauseBtn" onclick="pauseSpace()">Pause Background</button>
+      <br />
+      <ol>
+        <li>
+          Wikimedia Foundation. (2022, October 2). Gundam. Wikipedia. Retrieved
+          October 8, 2022, from https://en.wikipedia.org/wiki/Gundam
+        </li>
+        <li>
+          Universal century. The Gundam Wiki. (n.d.). Retrieved October 8, 2022,
+          from https://gundam.fandom.com/wiki/Universal_Century
+        </li>
+      </ol>
+      Customized styles following guides from W2Schools How TO:
+      <br />
+      <a
+        class="customized"
+        href="https://www.w3schools.com/howto/howto_css_fullscreen_video.asp"
+        >How TO - Fullscreen Video</a
+      >
+      <br />
+      <a
+        class="customized"
+        href="https://www.w3schools.com/howto/howto_css_table_zebra.asp"
+        >Zebra Striping a Table</a
+      >
+      <br />
+      <a
+        class="customized"
+        href="https://www.w3schools.com/howto/howto_css_image_overlay.asp"
+        >Image Hover Overlay</a
+      >
     </div>
 
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

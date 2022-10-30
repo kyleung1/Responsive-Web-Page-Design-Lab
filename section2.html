@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Mobile Suits</title>
 
-<head>
-    <title>Page Title</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
+  <body>
+    <video autoplay muted loop id="space-background">
+      <source src="vid/space.mp4" type="video/mp4" />
+    </video>
 
     <div class="topnav" id="myTopnav">
-        <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-        <a class="active" href="section2.html">Section 2</a>
-        <a href="section3.html">Section 3</a>
-        <a href="see_also.html">See Also</a>
-        <a href="references.html">References</a>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
+      <a href="index.html">Home</a>
+      <a href="section1.html">Release Date</a>
+      <a class="active" href="section2.html">Mobile Suits</a>
+      <a href="see_also.html">See Also</a>
+      <a href="references.html">References</a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <!-- Page content -->
     <div class="content">
-        This is section 2.
+      <h1>Mobile Suits</h1>
+      <br />
+      <button id="pauseBtn" onclick="pauseSpace()">Pause Background</button>
+
+      <div class="section2">
+        <div class="container">
+          <img src="img/rx78.webp" atl="rx78" class="image" style="" />
+          <div class="middle">
+            <div class="text">RX-78-2 Gundam</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="img/zeta.webp" alt="zeta" class="image" style="" />
+          <div class="middle">
+            <div class="text">MSZ-006 Zeta Gundam</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="img/zz.webp" alt="zz" class="image" style="" />
+          <div class="middle">
+            <div class="text">MSZ-010 ΖΖ Gundam</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="img/nu.webp" alt="nu" class="image" style="" />
+          <div class="middle">
+            <div class="text">RX-93 ν Gundam</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="img/uni.webp" alt="unicorn" class="image" style="" />
+          <div class="middle">
+            <div class="text">RX-0 Unicorn Gundam</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <img src="img/xi.webp" alt="xi" class="image" style="" />
+          <div class="middle">
+            <div class="text">RX-105 Ξ Gundam</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -1,42 +1,150 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Gundam U.C. Watch Order Wiki</title>
 
-<head>
-    <title>GEOG 495 LAB 02 EXAMPLE</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
+  <body>
+    <video autoplay muted loop id="space-background">
+      <source src="vid/space.mp4" type="video/mp4" />
+    </video>
 
     <div class="topnav" id="myTopnav">
-        <a class="active" href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-        <a href="section2.html">Section 2</a>
-        <a href="section3.html">Section 3</a>
-        <a href="see_also.html">See Also</a>
-        <a href="references.html">References</a>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
+      <a class="active" href="index.html">Home</a>
+      <a href="section1.html">Release Date</a>
+      <a href="section2.html">Mobile Suits</a>
+      <a href="see_also.html">See Also</a>
+      <a href="references.html">References</a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <!-- Page content -->
     <div class="content">
-        This is abstract section.
-        <br>
-        <br>
-        Here is the course cover image in a scaled size:
-        <br>
-        <img src="img/cover.jpg" style="width: 100%; height: auto;">
-        <br>
-        <br>
-        Here is the course cover image in its original size:
-        <img src="img/cover.jpg">
+      <button id="pauseBtn" onclick="pauseSpace()">Pause Background</button>
+
+      <h1>Gundam Universal Century Watch Order</h1>
+      <br />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/9/99/Gundam.jpg"
+        alt="gundam"
+      />
+      <p>
+        The Universal Century timeline in the Mobile Suit Gundam franchise / The
+        Universal Century is the main timeline in the Gundam franchise. There
+        are multiple timelines in the franchise but the Universal Century is the
+        main timeline that derives from the first show and has the most
+        continuity.
+      </p>
+      <p>
+        The Universal Century spans across multiple shows and movies and this is
+        the chronological order of watching them.
+      </p>
+      <h2>U.C. 0079</h2>
+      <p>
+        The year U.C. 0079 is the setting for the first Mobile Suit Gundam
+        (1979) show. Amuro Ray pilots the
+        <a href="https://gundam.fandom.com/wiki/RX-78-2_Gundam"
+          >RX-78-2 Gundam</a
+        >
+        in the one year war against zeon. There are multiple other stories that
+        take place in U.C. 0079 including
+        <a
+          href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam:_The_08th_MS_Team"
+          >Mobile Suit Gundam: The 08th MS Team</a
+        >, and
+        <a href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam_Thunderbolt"
+          >Mobile Suit Gundam: Thunderbolt</a
+        >.
+      </p>
+      <h3>U.C. 0080-83</h3>
+      <p>
+        The years U.C. 0080-83 have multiple side stories that explain the
+        events between Mobile Suit Gundam and Mobile Suit Zeta Gundam including
+        <a
+          href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam_0080:_War_in_the_Pocket"
+          >Mobile Suit Gundam 0080: War in the Pocket</a
+        >
+        and
+        <a
+          href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam_0083:_Stardust_Memory"
+          >Mobile Suit Gundam 0083: Stardust Memory</a
+        >. These stories are not essential for the main timeline.
+      </p>
+      <h2>U.C. 0087-88</h2>
+      <p>
+        The year U.C. 0087 is the setting for the Mobile Suit Zeta Gundam (1985)
+        show. Mobile Suit Zeta Gundam takes place 8 years after the first Mobile
+        Suit Gundam show. Kamille Bidan pilots the
+        <a href="https://gundam.fandom.com/wiki/MSZ-006_Zeta_Gundam"
+          >MSZ-006 Zeta Gundam</a
+        >
+        in the Battle of Gryps against the titans.
+      </p>
+      <p>
+        The year U.C. 0088 is the setting for the Mobile Suit Gundam ZZ (1986)
+        show. Mobile Suit Gundam ZZ takes place immediately after the Mobile
+        Suit Zeta Gundam show. Judau Ashta pilots the
+        <a href="https://gundam.fandom.com/wiki/MSZ-010_%CE%96%CE%96_Gundam"
+          >MSZ-010 ZZ Gundam</a
+        >
+        in the neo zeon war.
+      </p>
+      <h2>U.C. 0093</h2>
+      <p>
+        The year U.C. 0093 is the setting for the Mobile Suit Gundam: Char’s
+        Counterattack (1988) movie. Mobile Suit Gundam: Char’s Counterattack
+        takes place 5 years after Mobile Suit Gundam ZZ. Amuro Ray pilots the
+        <a href="https://gundam.fandom.com/wiki/RX-93_%CE%BD_Gundam"
+          >RX-93 V Gundam</a
+        >
+        in the second neo zeon war led by Char. The height of the Universal
+        Century, a turning point in the timeline that will impact stories
+        further down the timeline.
+      </p>
+      <img src="img/rx93.jpg" alt="rx93" />
+      <h2>U.C. 0096-97</h2>
+      <p>
+        The year U.C. 0096 is the setting for the Mobile Suit Gundam Unicorn
+        (2010) show. Mobile Suit Gundam Unicorn takes place 3 years after Mobile
+        Suit Gundam: Char’s Counterattack. Banagher Links pilots the
+        <a href="https://gundam.fandom.com/wiki/RX-0_Unicorn_Gundam"
+          >RX-0 Unicorn Gundam</a
+        >.
+      </p>
+      <h3>U.C +</h3>
+      <ul>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam:_The_Origin"
+          >
+            Mobile Suit Gundam: The Origin
+          </a>
+          U.C. 0068,0071,0078
+        </li>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam:_Hathaway%27s_Flash"
+            >Mobile Suit Gundam: Hathaway</a
+          >
+          U.C. 0105
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Mobile_Suit_Gundam_F91"
+            >Mobile Suit Gundam F91</a
+          >
+          U.C. 0123
+        </li>
+      </ul>
     </div>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

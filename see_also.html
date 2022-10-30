@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Gundam U.C. Watch Order Wiki</title>
 
-<head>
-    <title>Page Title</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
+  <body>
+    <video autoplay muted loop id="space-background">
+      <source src="vid/space.mp4" type="video/mp4" />
+    </video>
 
     <div class="topnav" id="myTopnav">
-        <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-        <a href="section2.html">Section 2</a>
-        <a href="section3.html">Section 3</a>
-        <a class="active" href="see_also.html">See Also</a>
-        <a href="references.html">References</a>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
+      <a href="index.html">Home</a>
+      <a href="section1.html">Release Date</a>
+      <a href="section2.html">Mobile Suits</a>
+      <a class="active" href="see_also.html">See Also</a>
+      <a href="references.html">References</a>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <!-- Page content -->
     <div class="content">
-        This is see also section.
+      <h1>See Also:</h1>
+      <br />
+      <button id="pauseBtn" onclick="pauseSpace()">Pause Background</button>
+      <br />
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Gundam">Gundam</a></li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Gundam_model">Gundam model</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Bandai_Namco_Filmworks"
+            >Bandai Namco Filmworks</a
+          >
+        </li>
+      </ul>
     </div>
 
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

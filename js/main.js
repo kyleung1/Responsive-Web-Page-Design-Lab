@@ -12,4 +12,17 @@ function responsive_control() {
   }
 }
 
+let video = document.getElementById("space-background");
+let pauseBtn = document.getElementById("pauseBtn");
+
+function pauseSpace() {
+  if (video.paused) {
+    video.play();
+    pauseBtn.innerHTML = "Pause Background";
+  } else {
+    video.pause();
+    pauseBtn.innerHTML = "Play Background";
+  }
+}
+
 console.log(Boolean(10 > 9))
